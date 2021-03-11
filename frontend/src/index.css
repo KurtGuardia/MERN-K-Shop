@@ -15,3 +15,16 @@ code {
 main {
   min-height: 80vh;
 }
+
+.fas,
+.far {
+  padding-right: 0.35rem;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
