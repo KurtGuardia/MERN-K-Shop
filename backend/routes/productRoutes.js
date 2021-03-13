@@ -26,7 +26,8 @@ router.get(
       res.json(product);
     } else {
       console.log('NOO'.rainbow);
-      res.status(404).json({ message: 'Product not found' });
+      res.status(404);
+      throw new Error('Product not found');
     }
   })
 );
