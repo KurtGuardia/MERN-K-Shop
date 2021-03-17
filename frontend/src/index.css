@@ -61,7 +61,22 @@ h2 {
   margin: 0.1rem;
 }
 
+.form-control-sm:focus {
+  background-color: #1c1d1f3b;
+  color: #d8dbdd;
+}
+
+.form-control:focus {
+  background-color: #1c1d1f3b;
+  color: #d8dbdd;
+}
+
 .form-control-sm {
+  background-color: #1c1d1f3b;
+  color: #b5b8bb;
+}
+
+.form-control {
   background-color: #1c1d1f3b;
   color: #b5b8bb;
 }

@@ -6,6 +6,7 @@ import Header from './components/Header';
 import HomeScreen from './views/HomeScreen';
 import ProductScreen from './views/ProductScreen';
 import CartScreen from './views/CartScreen';
+import LoginScreen from './views/LoginScreen';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Header />
       <main className='py-3'>
         <Container>
-          <Route path='/' component={HomeScreen} exact />
+          <Route path='/login' component={LoginScreen} />
           <Route path='/product/:id' component={ProductScreen} />
           <Route path='/cart/:id?' component={CartScreen} />
+          <Route path='/' component={HomeScreen} exact />
         </Container>
       </main>
       <Footer />
