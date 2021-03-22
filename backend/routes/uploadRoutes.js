@@ -20,7 +20,7 @@ function checkFileType(file, cb) {
   const extname = fileTypes.test(
     path.extname(file.originalname).toLocaleLowerCase()
   );
-  const mimeType = fileTypes.text(file.mimetype);
+  const mimeType = fileTypes.test(file.mimetype);
 
   if (extname && mimeType) {
     return cb(null, true);
